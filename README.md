@@ -23,15 +23,26 @@ How to run the project:
         = password : "admin"
 
 
-User Operations:
-----------------
--> User can create account and make some transactions.
--> In User page, user details and transaction details are displayed.
+Features:
 
-Admin Operations:
------------------
--> Admin is having authority for CRUD operations.
--> There is only single admin account available.
--> Admin can 'read' all the users with their respective transactions.
--> Admin can 'update' the transaction details of any user.
--> Admin can 'delete' any user or also any particular transaction of a user.
+User Functionality:
+-------------------
+Account Creation: Users can create and manage their own accounts.
+Transaction Creation: Users can create transactions, which will trigger notifications to the admin.
+
+Admin Functionality:
+--------------------
+Account Management: Admins have the authority to update and delete user accounts.
+Transaction Management: Admins can view, accept, or reject user-created transactions. They also have the capability to update or delete existing transactions.
+Notifications: Admins receive notifications whenever a new transaction is created by a user.
+
+Authentication and Authorization:
+--------------------------------
+User Authentication: Ensures secure access for users to their accounts.
+Admin Authorization: Grants admin privileges for managing transactions and user accounts.
+
+Tech Stack:
+----------
+Frontend: HTML, CSS, JavaScript
+Backend: Express.js
+Database: MySQL
