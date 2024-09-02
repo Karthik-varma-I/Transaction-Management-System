@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="create-account" class="login-container">
+            <h1 class="login-heading">Create An Account</h1>
+            <div class="div-instruct">Fill The Details Below</div>
+            <div id="create-errmsg" class="div-error-msg"></div>
+            <div><input class="input-email" type="email" name="" id="create-email" placeholder="Email Adderss"></div>
+            <div><input class="input-passwd" type="password" name="" id="create-password" placeholder="Password"></div>
+            <div class="foot-div">
+                <button id="create-btn" onclick="createUser(event)" class="input-btn">Create Account</button>
+                <div class="signin-text"><sub>Already Have An Account? <a onclick="toggle_signin()" href="#">Sign In</a></sub></div>
+                <div><sub>Login As <a onclick="toggle_adminlogin()" href="#">Admin</a></sub></div>
+            </div> 
+        </div>
+        <div id="sign-in" class="login-container">
+            <h1 class="login-heading">Sign In</h1>
+            <div class="div-instruct">Fill The Details Below</div>
+            <div id="signin-errmsg" class="div-error-msg"></div>
+            <div><input class="input-email" type="email" name="" id="signin-email" placeholder="Email Adderss"></div>
+            <div><input class="input-passwd" type="password" name="" id="signin-password" placeholder="Password"></div>
+            <div class="foot-div">
+                <button id="verify-btn" onclick="authenticateUser(event, 'signin')" class="input-btn">Verify</button>
+                <div class="signin-text"><sub>Don't Have An Account? <a onclick="toggle_createaccount()" href="#">Create Account</a></sub></div>
+                <div><sub>Login As <a onclick="toggle_adminlogin()" href="#">Admin</a></sub></div>
+            </div> 
+        </div>
+        <div id="admin-login" class="login-container">
+            <h1 class="login-heading">Admin LogIn</h1>
+            <div class="div-instruct">Fill The Details Below</div>
+            <div id="admin-errmsg" class="div-error-msg"></div>
+            <div><input class="input-email" type="email" name="" id="admin-email" placeholder="Email Adderss"></div>
+            <div><input class="input-passwd" type="password" name="" id="admin-password" placeholder="Password"></div>
+            <div class="foot-div">
+                <button id="verify-btn" onclick="authenticateUser(event, 'admin')" class="input-btn">Verify</button>
+                <div class="signin-text"><sub>Don't Have An Account? <a onclick="toggle_createaccount()" href="#">Create Account</a></sub></div>
+                <div class="signin-text"><sub>Already Have An Account? <a onclick="toggle_signin()" href="#">Sign In</a></sub></div>
+            </div> 
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

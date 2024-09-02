@@ -1,0 +1,75 @@
+body, html{
+    height: 100%;
+    font-family: sans-serif;
+            background-image: url('./resource/background.jpg');
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+#sign-in, #admin-login {
+    display: none;
+}
+
+#main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-container {
+    padding: 30px;
+    border-radius: 12px;
+    background-color: rgb(219, 207, 245);
+}
+
+.login-heading {
+    margin-top: 0px;
+}
+
+.div-instruct {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: small;
+    color: rgb(116, 113, 113);
+}
+
+.div-error-msg {
+    color: rgb(250, 48, 48);
+    font-weight: 600;
+}
+
+.input-email, .input-passwd {
+    /* margin: auto; */
+    padding: 10px;
+    display: inline-block;
+    width: 17rem;
+    margin: 12px 0px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.input-btn {
+    padding: 1rem 4rem;
+    border: 0px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: auto;
+    background-color: rgb(103, 49, 188);
+    color: azure;
+}
+
+.foot-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.signin-text {
+    font-size: medium;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="./user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="head-bar">
+        <h2 id="welcome-head"> Welocme back <br>
+            User </h2>
+        <div id="icons-div">
+            <i class="fa-regular fa-bell"></i> &nbsp;
+            <i class="fa-solid fa-gear"></i>
+        </div>
+    </div>
+    <div class="cards-div">
+        <div class="card-amount-div">
+            <h4>Total Transaction Amount (success)</h4>
+            <span class="mid-line-span" id="amount-field"></span> <br>
+            <span class="mid-last-span" id="last-updated-field"></span>
+        </div>
+        <div id="create-div" class="card-create-div">
+            <h4>Create New Transaction</h4>
+        </div>
+        <div class="card-details-div">
+            <h4>Your Account</h4>
+            <span class="mid-line-span" id="user-email-field">  </span> <br>
+            <span class="mid-last-span" id="Transaction-count"></span>
+        </div>
+    </div>
+    <div class="payment-container" id="payment-container">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <!-- <label for="status">Status:</label>
+        <select id="status">
+            <option value="success">Success</option>
+            <option value="failed">Failed</option>
+        </select> -->
+        
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method">
+            <option value="credit-card">Credit Card</option>
+            <option value="debit-card">Debit Card</option>
+            <option value="netbanking">Netbanking</option>
+        </select>
+        
+            <button id="confirm-btn">Confirm</button>
+            <i title="cancel" id="cancel-btn" class="fa-sharp fa-solid fa-circle-xmark"></i>
+    </div>
+    
+    <div class="table-div">
+        <h3>Transaction History</h3>
+        <div class="btn-div">
+            <button class="table-btn" id="all-btn" onclick="handleBtn('all')">All</button>
+            <button class="table-btn" id="success-btn" onclick="handleBtn('success')">Success</button>
+            <button class="table-btn" id="failed-btn" onclick="handleBtn('failed')"">Failed</button>
+            <button class="table-btn" id="pending-btn" onclick="handleBtn('pending')"">Pending</button>
+        </div>
+        <table id="main-table">
+            
+        </table>
+    </div>
+    <script src="./user.js"></script>
+</body>
+
+</html>

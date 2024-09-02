@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(201, 224, 244);
+    width: 100%;
+    height: 100%;
+}
+
+.head-bar {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(214, 210, 205);
+    margin-bottom: 5px;
+    padding: 10px;
+    padding-left: 3vw;
+    position: relative;
+}
+
+#notification-container {
+    display: none;
+    z-index: 10;
+    width: 400px;
+    position: fixed;
+    right: 5px;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 1s;
+}
+
+
+.notification-container .notification {
+    position: relative;
+    margin: 2px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: #f8edfc;
+}
+.notification-container .user-name {
+    /* text-align: center; */
+    color: rgb(42, 147, 193);
+}
+
+.notification-container .user-email {
+    font-size: small;
+    color: #7d45cb;
+}
+
+.notification-container .content {
+    color: #933e55;
+    width: 80%;
+}
+
+.notification-container .btns {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+}
+
+.notification-container button {
+    width: 25px;
+    height: 25px;
+}
+
+.notification-container .payment-method {
+    color: #ea1e51;
+}
+.notification-container .amount {
+    color: #1b41ec;
+}
+.notification-container .wrng-btn {
+    background-color: #f81b1b;
+    border: 0;
+    color: white;
+}
+
+.notification-container .correct-btn {
+    background-color: #25f112;
+    border: 0;
+    color: white;
+}
+
+
+
+#notification-heading {
+    color: grey;
+    text-align: center;
+}
+
+#icons-div {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.user-list {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.user-bar {
+    background-color: #762adf;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-details {
+    display: none;
+    /* background-color: #918e9d; */
+    /* border: 1px solid #ccc; */
+    /* padding: 10px; */
+    /* border-radius: 5px; */
+}
+
+th, td {
+    padding: 8px 30px;
+}
+
+th {
+    background-color: rgb(6, 172, 141);
+}
+
+td {
+    background-color: rgb(155, 213, 145);
+}
+
+.table-btns-delete, .table-btns-edit {
+    /* display: inline-block; */
+    width: 2vw;
+    color: white;
+}
+
+.table-btns-delete:hover, .table-btns-edit:hover {
+    cursor: pointer;
+}
+
+.table-btns-edit {
+    background-color: rgb(29, 214, 63);
+}
+
+.table-btns-delete {
+    background-color: red;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.payment-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    position: relative;
+}
+
+.payment-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.payment-container input,
+.payment-container select {
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-container input::placeholder {
+    color: #999;
+}
+
+#confirm-btn {
+    padding: 8px;
+    color: white;
+    background-color: rgb(63, 63, 233);
+    border: 0px;
+}
+
+#cancel-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#cancel-btn:hover{ 
+    cursor: pointer;
+}
+
+.payment-container {
+    display: none;
+}
+
+#tran-head-div {
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.delete-user-btn {
+    display: inline-block;
+    position: absolute;
+    right : 0;
+    margin: auto 10px;
+
+}
+
+#head-user-bar {
+    background-color: rgb(74, 73, 73);
+}
